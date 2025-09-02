@@ -1,0 +1,121 @@
+Step1: Design Framework
+Step2: Execute Framework
+---------------------------
+	Selenium+Maven+TestNG
+	--------------------------
+	1.using testng.xml file
+	2.Maven pom.xml file  :-
+	
+	   for this need plugin add below mention two plugin 
+	ToRun:-   right click pom.xml ->run as ->maven clean 
+	    right click pom.xml ->run as ->maven clean 
+	    
+	3.Using CLI:-
+		step: Maven Project Executing using CLI
+	----------------------------------------
+	1.download and setup maven in local machine
+	
+	https://maven.apache.org/download.cgi
+	
+	download zip file--->extract--->open upto bin folder and copy path -->
+	add it in env variable [MAVEN_HOME]
+	
+	after the setup use cmd = mvn -version
+	check the maven version
+	
+	cmd
+	cd [paste your project path] C:\Users\BusinessComputers.in\eclipse-workspace\HybridFramework
+	
+	mvn clean 
+	mvn test
+	
+	
+	
+	4.Using Jenkins:-
+	
+	
+	project-->store(github)-->changes-->automatically execute through Jenkins
+	slenium+github+jenkins
+	
+	What is Maven?
+	==================
+	Mavan is buid management tool as well as project management tool
+	
+	plugin
+	-----------
+	pom structure :- e.g of 1 plugin 
+	
+	<build>
+  <pluginManagement>
+  <plugins>
+  <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.5.3</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>MasterFile.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+  </plugins>
+  </pluginManagement>
+  </build>
+	
+	
+	
+	1.Surefire plugin
+	https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
+	
+	here in plugin change your master xml file name 
+	
+	2.compiler plugin
+	https://maven.apache.org/plugins/maven-compiler-plugin/examples/compile-using-different-jdk.html
+	update the executable file follw below syntx
+	
+	 <executable>${JAVA_1_4_HOME}/bin/javac</executable>
+	 here update your java enviroment varibale name 
+	  <executable>${JAVA_HOME}/bin/javac</executable>
+	  
+	  3.Properties:- add above the dependencies tag 
+	  
+	  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.release>21</maven.compiler.release>
+	</properties>
+	  
+	  
+	Goals
+	============
+	1.clean
+	--------------
+	delete all the files from target folder
+	
+	
+	2.test
+	--------------
+	test goal execute project
+	
+	3.install
+	--------------
+	install required files and execute project
+	==================================================
+
+	
+	=========================================================
+	what is Devops
+	--------------------
+	Git+Github
+	Jenkins
+	Integration between github+jenkins
+	Docker
+	
+	Step3: Attach Report
+	====================
+		TestNg Listerner
+		Extent Report
+		Chain test report
+		
+		Selenium Grid
+		------------------
+		
