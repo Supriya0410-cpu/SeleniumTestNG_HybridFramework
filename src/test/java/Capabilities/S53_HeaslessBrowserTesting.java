@@ -1,0 +1,56 @@
+package Capabilities;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
+
+public class S53_HeaslessBrowserTesting {
+  @Test
+  public void headlesstesting() {
+	  
+	  //imp headless test 
+	  ChromeOptions options = new ChromeOptions();
+	  options.addArguments("--headless");
+	  
+	  //passs the arg here
+	  WebDriver driver = new ChromeDriver(options);
+		driver.get("https://www.saucedemo.com/v1/");
+		
+		System.out.println("****************************URL Validation****************************************8");
+		if(driver.getCurrentUrl().contains("saucedemo")) //URL Validation 
+		{
+			System.out.println("Enterted URL is Correct");
+		}
+		else
+		{
+			System.out.println("Please cross verify the URL");
+		}
+		
+		System.out.println("***********************Tittle Validation**********************");
+		
+		String Tittle=	driver.getTitle(); //Title Validation 
+
+		if(Tittle.equals("Swag Labs"))
+		{
+			System.out.println("Validation Sucess PProceed with further steps ");
+		}
+
+		else
+		{
+			System.out.println("Someting went wrong please check the URL");
+		}
+
+		driver.findElement(By.id("user-name")).sendKeys("standard_user");
+
+		driver.findElement(By.id("password")).sendKeys("secret_sauce");
+
+		driver.findElement(By.id("login-button")).click();
+
+		//       OR 
+		//driver.findElement(By.id("login-button")).sendKeys(Keys.ENTER);
+
+	}
+  }
+

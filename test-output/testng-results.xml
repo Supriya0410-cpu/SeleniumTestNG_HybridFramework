@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-27T15:45:55 IST" name="Default suite" finished-at="2025-08-27T15:46:02 IST" duration-ms="7118">
+    <groups>
+    </groups>
+    <test started-at="2025-08-27T15:45:55 IST" name="Default test" finished-at="2025-08-27T15:46:02 IST" duration-ms="7118">
+      <class name="SeleniumAlerts.S35_AuthenticationPopup">
+        <test-method signature="AuthPopup()[pri:0, instance:SeleniumAlerts.S35_AuthenticationPopup@2a3b5b47]" started-at="2025-08-27T15:45:55 IST" name="AuthPopup" finished-at="2025-08-27T15:46:02 IST" duration-ms="7038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AuthPopup -->
+      </class> <!-- SeleniumAlerts.S35_AuthenticationPopup -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

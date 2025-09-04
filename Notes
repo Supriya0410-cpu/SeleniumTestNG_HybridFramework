@@ -1,0 +1,29 @@
+
+CSS Selector :- 
+
+	//Element using A Tag name with id value
+		driver.findElement(By.cssSelector("a#SignIn")).click();
+		
+	//Element using A Tag name with attribute name and value 
+		driver.findElement(By.cssSelector("input[name=\"email-name\"]")).sendKeys("test@1234");
+		
+	//Element using A Tag name with classname
+		driver.findElement(By.cssSelector("button.btn-primary")).click();
+		
+	//Mix with class name and attribute value 
+		driver.findElement(By.cssSelector("button.btn-primary[type=\"submit\"]")).click();
+		
+	//searchbox:tagname with $(endswith)
+		driver.findElement(By.cssSelector("input[id$='box']")).sendKeys("bags",Keys.ENTER);
+	
+	//clear the text and search for mobiles: tagname with ^(startswith)
+		WebElement res=	driver.findElement(By.cssSelector("input[id^='two']"));
+	
+	//clear the text and search for watch: tagname with *(contains partial match)
+		WebElement res1= driver.findElement(By.cssSelector("input[id*='search']"));
+		
+		
+Xpath:
+
+	//List of web elemet get first search the grandparaent node unique match then search next tag of ele
+			List<WebElement> ele= driver.findElements(By.xpath("(//ul[@class='G43f7e'])[1]//li"));	
