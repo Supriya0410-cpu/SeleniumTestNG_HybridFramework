@@ -29,7 +29,7 @@ public class BrowserProvider {
 			
 		break;
 		
-		case "edge":
+		case "Edge":
 			
 		break;
 			

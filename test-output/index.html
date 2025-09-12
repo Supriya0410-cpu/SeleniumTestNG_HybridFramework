@@ -155,8 +155,8 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;bname&quot; value=&quot;edge&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;bname&quot; value=&quot;Edge&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.swaglabUITest.TestCases.T5_OverviewTest&quot;/&gt;
     &lt;/classes&gt;
@@ -202,11 +202,11 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validateChekout')
 data.setCell(0, 2, 'com.swaglabUITest.TestCases.T5_OverviewTest')
-data.setCell(0, 3, 3134);
+data.setCell(0, 3, 3167);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyPayment')
 data.setCell(1, 2, 'com.swaglabUITest.TestCases.T5_OverviewTest')
-data.setCell(1, 3, 131);
+data.setCell(1, 3, 153);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -239,24 +239,24 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.swaglabUITest.TestCases.T5_OverviewTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setUp(edge)</span>
+                <span class="method-name">setUp(Edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">2817 ms</span>
+                <span class="method-start">5846 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyPayment</span>
-                <span class="method-start">17919 ms</span>
+                <span class="method-start">21463 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateChekout</span>
-                <span class="method-start">18059 ms</span>
+                <span class="method-start">21627 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21196 ms</span>
+                <span class="method-start">24795 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
