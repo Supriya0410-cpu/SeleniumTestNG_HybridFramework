@@ -27,3 +27,63 @@ Xpath:
 
 	//List of web elemet get first search the grandparaent node unique match then search next tag of ele
 			List<WebElement> ele= driver.findElements(By.xpath("(//ul[@class='G43f7e'])[1]//li"));	
+			
+			
+	Jenkins
+---------------
+1.trigger build manually
+2.trigger build periodically
+3.trigger build remotely
+4.trigger build from github
+5.trigger build one  after other build
+(Build chaining)
+
+TestNg Listener
+=================
+TestNG Listeners
+=================
+TestNG provides the Listeners which listens to every event that occurs in a selenium/Appium code.
+Listeners are activated either before the test or after the test case. It is an interface that modifies the TestNG behavior.
+
+
+Listeners are implemented by the ITestListener interface.
+ An ITestListener interface has the following methods:
+
+onTestStart(): An onTestStart() is invoked only when any test method gets started.
+
+onTestSuccess(): An onTestSuccess() method is executed on the success of a test method.
+
+onTestFailure(): An onTestFailure() method is invoked when test method fails.
+
+onTestSkipped(): An onTestSkipped() run only when any test method has been skipped.
+
+onTestFailedButWithinSuccessPercentage(): This method is invoked each time when the test method fails but within success percentage.
+
+onStart(): An onStart() method is executed on the start of any test method.
+
+onFinish(): An onFinish() is invoked when any test case finishes its execution.
+
+There are two ways to apply listener on current test case
+---------------------------------------------------------
+1. @listeners annotation
+2. Using xml file
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
