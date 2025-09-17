@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-15T11:21:38 IST" name="Suite" finished-at="2025-09-15T11:21:48 IST" duration-ms="10519">
+  <suite started-at="2025-09-17T11:12:27 IST" name="Suite" finished-at="2025-09-17T11:12:39 IST" duration-ms="12349">
     <groups>
     </groups>
-    <test started-at="2025-09-15T11:21:38 IST" name="Test" finished-at="2025-09-15T11:21:48 IST" duration-ms="10519">
+    <test started-at="2025-09-17T11:12:27 IST" name="Test" finished-at="2025-09-17T11:12:39 IST" duration-ms="12349">
       <class name="TESTNG_FRAMEWORK.Listeners.CRMTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TESTNG_FRAMEWORK.Listeners.CRMTest@38425407]" started-at="2025-09-15T11:21:38 IST" name="setup" finished-at="2025-09-15T11:21:47 IST" duration-ms="9175" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TESTNG_FRAMEWORK.Listeners.CRMTest@448c8166]" started-at="2025-09-17T11:12:27 IST" name="setup" finished-at="2025-09-17T11:12:37 IST" duration-ms="10344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testsigninlink()[pri:1, instance:TESTNG_FRAMEWORK.Listeners.CRMTest@38425407]" started-at="2025-09-15T11:21:47 IST" name="testsigninlink" finished-at="2025-09-15T11:21:48 IST" duration-ms="833" status="PASS">
+        <test-method signature="testsigninlink()[pri:1, instance:TESTNG_FRAMEWORK.Listeners.CRMTest@448c8166]" started-at="2025-09-17T11:12:37 IST" name="testsigninlink" finished-at="2025-09-17T11:12:38 IST" duration-ms="1386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testsigninlink -->
-        <test-method signature="testLogin()[pri:2, instance:TESTNG_FRAMEWORK.Listeners.CRMTest@38425407]" started-at="2025-09-15T11:21:48 IST" name="testLogin" finished-at="2025-09-15T11:21:48 IST" duration-ms="339" status="FAIL">
+        <test-method signature="testLogin()[pri:2, instance:TESTNG_FRAMEWORK.Listeners.CRMTest@448c8166]" started-at="2025-09-17T11:12:38 IST" name="testLogin" finished-at="2025-09-17T11:12:39 IST" duration-ms="377" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#submit\-Button"}
@@ -24,9 +24,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd1b91b5ca3087e7cd22a9ec7c320265, findElement {value=submit-Button, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\BUSINE~1.IN\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52872/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd1b91b5ca3087e7cd22a9ec7c320265]]>
+Command: [c4482abae20026bba538e688a6187315, findElement {using=id, value=submit-Button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\BUSINE~1.IN\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59402/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c4482abae20026bba538e688a6187315]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#submit\-Button"}
@@ -35,9 +35,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd1b91b5ca3087e7cd22a9ec7c320265, findElement {value=submit-Button, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\BUSINE~1.IN\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52872/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd1b91b5ca3087e7cd22a9ec7c320265
+Command: [c4482abae20026bba538e688a6187315, findElement {using=id, value=submit-Button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\BUSINE~1.IN\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59402/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c4482abae20026bba538e688a6187315
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -85,7 +85,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method signature="testLogout()[pri:3, instance:TESTNG_FRAMEWORK.Listeners.CRMTest@38425407]" started-at="2025-09-15T11:21:48 IST" name="testLogout" finished-at="2025-09-15T11:21:48 IST" duration-ms="64" status="FAIL">
+        <test-method signature="testLogout()[pri:3, instance:TESTNG_FRAMEWORK.Listeners.CRMTest@448c8166]" started-at="2025-09-17T11:12:39 IST" name="testLogout" finished-at="2025-09-17T11:12:39 IST" duration-ms="72" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Sign Out"}
@@ -94,9 +94,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd1b91b5ca3087e7cd22a9ec7c320265, findElement {value=Sign Out, using=link text}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\BUSINE~1.IN\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52872/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd1b91b5ca3087e7cd22a9ec7c320265]]>
+Command: [c4482abae20026bba538e688a6187315, findElement {using=link text, value=Sign Out}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\BUSINE~1.IN\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59402/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c4482abae20026bba538e688a6187315]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Sign Out"}
@@ -105,9 +105,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd1b91b5ca3087e7cd22a9ec7c320265, findElement {value=Sign Out, using=link text}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\BUSINE~1.IN\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52872/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd1b91b5ca3087e7cd22a9ec7c320265
+Command: [c4482abae20026bba538e688a6187315, findElement {using=link text, value=Sign Out}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\BUSINE~1.IN\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59402/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c4482abae20026bba538e688a6187315
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
