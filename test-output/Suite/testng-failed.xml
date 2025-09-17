@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="com.swaglabUITest.utilities.ExtentITestngListener"/>
+  </listeners>
+  <test thread-count="5" name="CartTest(failed)">
+    <parameter name="bname" value="edge"/>
+    <classes>
+      <class name="com.swaglabUITest.TestCases.T3_CartTest">
+        <methods>
+          <include name="validatecheckoutbtn"/>
+          <include name="setup"/>
+          <include name="setUp"/>
+          <include name="verifytotalproductincart"/>
+          <include name="removeproductintocart"/>
+          <include name="validatecontinueshoppingbtn"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.swaglabUITest.TestCases.T3_CartTest -->
+    </classes>
+  </test> <!-- CartTest(failed) -->
+  <test thread-count="5" name="CheckoutTest(failed)">
+    <parameter name="bname" value="edge"/>
+    <classes>
+      <class name="com.swaglabUITest.TestCases.T4_CheckoutTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="setup"/>
+          <include name="validatecheckout"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.swaglabUITest.TestCases.T4_CheckoutTest -->
+    </classes>
+  </test> <!-- CheckoutTest(failed) -->
+  <test thread-count="5" name="FinishTest(failed)">
+    <parameter name="bname" value="edge"/>
     <classes>
       <class name="com.swaglabUITest.TestCases.T5_OverviewTest">
         <methods>
@@ -13,5 +46,5 @@
         </methods>
       </class> <!-- com.swaglabUITest.TestCases.T5_OverviewTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- FinishTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
