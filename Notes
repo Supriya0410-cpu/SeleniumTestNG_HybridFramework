@@ -1,0 +1,57 @@
+1]First add Cucumber plugin from eclipse market place if not then use below path for 
+
+help->install new software use below link install it 
+https://cucumber.github.io/cucumber-eclipse-update-site-snapshot/
+
+2] Cretae Maven Project 
+
+3] Add 3 dependency for cucumber and other aslo selenium and testng 
+for this refer pom.xml of this project 
+
+4] Ceate Feature file 
+
+
+Folder Structure 
+
+1] Under Src/Test Create Frist pkg for the Stepdef
+2] Under Src/Test Create Second pkg for the TestRunner
+3] Under SRC/Resources Create Feature file for your testing 
+
+
+
+For execution :-
+
+1]Create Feature File :- use proper syntax 
+
+When repative pre condition you need [For e.g open application ]
+Use Background Tag name 
+Background: 
+Given open xyz application 
+
+2]For Stepdef Run your feature file there you will get the unimplemented method declartion part 
+copy and create Normal java class and paste remove body of method and start your scription part 
+
+
+
+3] For test runner create simple java class use below annotation 
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="src/test/resources/FeatureFile/googleTest.feature",
+                 glue="Com.StepDef")
+                 
+                 
+Feature contains feature file path 
+glue contains step def pkg name [only pkg name ]     
+
+
+
+Tags in Cucumber :-
+
+And operator not worked in cucumber use OR 
+IF Multiple test cases not want to run add common tag name to that scenario [e.g @ignore]
+
+            
+
+
+
+
