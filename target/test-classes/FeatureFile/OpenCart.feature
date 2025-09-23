@@ -1,5 +1,6 @@
 Feature: Test Open Cart Application
 
+@asmap
   Scenario: Test Register Functionality
     Given open the OpenCart application
     When user enter valid feilds
@@ -9,7 +10,7 @@ Feature: Test Open Cart Application
     When user clcik on the privacy checkbox
     When user clcik on Continue  button
     Then user should able to regester and get valid message
-
+@cells
   Scenario: Test Login Functionality
     Given open cart application login page
     When user enter valid credentails
