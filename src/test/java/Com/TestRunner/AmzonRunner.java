@@ -8,7 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/FeatureFile/AmazonTittle.feature",
                  glue="Com.StepDef",
-                 publish=true
+                 plugin={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+               publish=true
                //  tags="@homepage" --------for single scenario run 
                //  tags="@all" -------------for all test cases run
              //  tags="@homepage or @sellpage or @mxpage"---- specific test cases to run 

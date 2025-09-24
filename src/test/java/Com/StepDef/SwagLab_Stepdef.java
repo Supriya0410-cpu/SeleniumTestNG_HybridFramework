@@ -2,21 +2,23 @@ package Com.StepDef;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 
+import Com.utility.BrowserProvider;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class SwagLab_Stepdef {
 
-	public WebDriver driver;
+	//public WebDriver driver;// driver is null 
+	
+	WebDriver driver=BrowserProvider.getdriver();
 	
 	@Given("SwagLab Application should be open using this link {string}")
 	public void swag_lab_application_should_be_open_using_this_link(String url) {
 		
-		driver= new EdgeDriver();
+	//	driver= new EdgeDriver();
 	    driver.get(url);
 	}
 

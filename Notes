@@ -47,11 +47,144 @@ glue contains step def pkg name [only pkg name ]
 
 Tags in Cucumber :-
 
-And operator not worked in cucumber use OR 
+And operator not worked in cucumber tags use OR 
 IF Multiple test cases not want to run add common tag name to that scenario [e.g @ignore]
 
-            
+tags="@homepage" --------for single scenario run 
+tags="@all" -------------for all test cases run
+tags="@homepage or @sellpage or @mxpage"---- specific test cases to run 
+tags="not @homepage" ----------------------Expect homepage rel all run 
+tags= "not @ignore"  -------------------------Skip multiple secnario use same tag name for all test cses use this sysntax
 
 
+DataTable Provider in Cucumber :-
+
+OpenCart application example 
+
+used to methods here 
+1] key value pair = asmap ()  method 
+2]Just value = cells() method 
+
+ASMAP ():-
+ * For this method first remove import statement and add above of class name 
+ * Second change method variable name 
+ * We are passing data through the Key value pair
+ * That is the reason we are using a Map 
+ * asmap() method used to get data in key value pair  
+ 
+ @asmap
+  Scenario: Test Register Functionality
+    Given open the OpenCart application
+    When user enter valid feilds
+      | fname | lname | email              | telephone  | password  | cpassword |
+      | sanvi | kadam | sanvi192@gmail.com | 7898096545 | abc@sanvi | abc@sanvi |
+    When user click on radio button
+    When user clcik on the privacy checkbox
+    When user clcik on Continue  button
+    Then user should able to regester and get valid message
+
+Cells():-
+     *For this method first remove import statement and add above of class name 
+     * Second change method variable name 
+	 * Here we are using normal list bcz we have only one list of only key 
+	 * using method cell
+
+@cells
+  Scenario: Test Login Functionality
+    Given open cart application login page
+    When user enter valid credentails
+      | sanvi112@gmail.com | abc@sanvi |
+    When user click on the login button of login page
+    Then user should able to login account page
+
+DataDriven Testing :-  Multiple inputs testing for single senario 
+
+User senario Outline keyword for this 
+Write normal feature file user input take this e.g
+"<username>" and "<password>"
+
+for test data use below syantx
+
+Examples :
+
+ 	| username | password |
+      | Admin    | admin123 |
+      | pooja    | test123  |
+      | Admin    | admin123 |
+      | Abhay    | test123  |
+
+Hooks :- Hooks means the the Certain rulles like annotations in TESTNG 
+
+In Cucumber we have only two hooks 
+a]@before- Before will run before every scenario
+b]@after -After will run After every scenario
+
+
+Hokks always in differnt pkg of framework 
+to implement this use utility - Browser provider 
+
+Steps :-
+
+1] create a seperate pkg for utility create BrowserProvider 
+  - use ThreadLocal class and create method setdriver get driver 
+2] Create another pkg for hooks create class hooks 
+  - create setup(@before) and tear_down(@after) method 
+  - setup browser here in setup & quite in tear_down
+  e.g 	driver=	BrowserProvider.setdriver("edge"); ---Browser setup
+3] Update your step def class 
+   WebDriver driver=BrowserProvider.getdriver();
+  Comment your driver launch statement
+4] Update your runner file as follwed below syntax 
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features= "src\\test\\resources\\FeatureFile\\SwagLab.feature" ,
+         glue={"Com.StepDef" ,"Com.apphooks"},
+         publish=true)
+
+-Add your hooks pkg name in glue 
+
+Reporting :-
+1] Simple reporting user publish = true in runner file 
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features= "src\\test\\resources\\FeatureFile\\OpenCart.feature" ,
+         glue="Com.StepDef" ,
+         publish=true) 
+
+2] ExtenT Reporting :-
+
+1]Add dependency 
+
+	<dependency>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>extentreports-cucumber7-adapter</artifactId>
+			<version>1.12.0</version>
+		</dependency>
+		
+2]Add plugin in in Runner file 
+
+plugin={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+
+
+3]Add extent.properties file in src/test/ resources 
+
+extent.properties ---this will define the all properties of your report
+
+extent.reporter.spark.out=HtmlReport/SparkReport/Spark.html
+
+screenshot.dir=Screenshots/
+screenshot.rel.path=../Screenshots/
+
+extent.reporter.spark.start=true
+extent.reporter.pdf.start=true
+extent.reporter.pdf.out=HtmlReport/PdfReport/ExtentPdf.pdf
+
+extent.reporter.html.start=true
+extent.reporter.html.out=test-output/HtmlReport/ExtentHtml.html
+
+basefolder.name=HtmlReport
+basefolder.datetimepattern=d-MMM-YY HH-mm-ss
+
+systeminfo.os=windows
 
 
