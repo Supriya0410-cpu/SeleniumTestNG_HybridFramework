@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Com.APIBasic.T6_JsonPayloadWay">
+      <class name="Com.APIBasic.T07_APIChaining">
         <methods>
-          <include name="CreatePayloadusingbasic"/>
+          <include name="fullUpdateBooking"/>
         </methods>
-      </class> <!-- Com.APIBasic.T6_JsonPayloadWay -->
+      </class> <!-- Com.APIBasic.T07_APIChaining -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
