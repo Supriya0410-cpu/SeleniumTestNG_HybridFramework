@@ -1,5 +1,5 @@
 package Com.APIBasic;
-
+//static import
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
 

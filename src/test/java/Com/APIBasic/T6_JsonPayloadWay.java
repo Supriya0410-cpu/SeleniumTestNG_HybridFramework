@@ -35,6 +35,18 @@ import static io.restassured.RestAssured.*;
  * then():validate
  * ---------------------------------
  * status code,status message, cookies, header, response time,response payload
+ * 
+ * Path Param and Query param 
+ * BaseUrl = 
+ * Path param- Whenever any resource which is pointing to the server then its called as path param 
+ * Query Parameter- filterting the path param use query parameter 
+ *  e.g 
+ *  https://reqres.in/api/users?page=2
+ *  
+ *  Base Url =https://reqres.in/api
+ * Path Param= /users    ---after base url / always path param 
+ * query param= ?page=2   --After question there is always query param 
+ * 
  */
  
  
@@ -95,7 +107,7 @@ public class T6_JsonPayloadWay {
 	 res.then().log().body();
 	 
 	 //Validate Response 
-	 
+	
 	 Assert.assertEquals(res.getStatusCode(),201);
 	  System.out.println("Status code is Matched!");
 	  

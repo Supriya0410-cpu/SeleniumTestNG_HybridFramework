@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Com.APIBasic.T07_APIChaining">
+      <class name="Com.APIBasic.Tc12_Authorization">
         <methods>
-          <include name="fullUpdateBooking"/>
+          <include name="genertteBareaertoken"/>
         </methods>
-      </class> <!-- Com.APIBasic.T07_APIChaining -->
+      </class> <!-- Com.APIBasic.Tc12_Authorization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
